@@ -11,5 +11,6 @@ namespace T1809E_UWP_ASSIGNMENT_TrangDM2.Services
     {
         Task<string> ReadFile(string fileName);
         void WriteToFile(string fileName, string content);
+        Task<string> HttpUploadFile(string url, string paramName, string contentType, StorageFile fi);
     }
 }

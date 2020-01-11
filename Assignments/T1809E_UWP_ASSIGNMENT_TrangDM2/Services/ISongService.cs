@@ -13,7 +13,6 @@ namespace T1809E_UWP_ASSIGNMENT_TrangDM2.Services
         Task<String> GetNewSongs(String token);
         Task<String> GetMySongs(String token);
         Task<String> AddSong(Song song, String token);
-
         Task<string> UploadSongToDriver(StorageFile file);
     }
 }

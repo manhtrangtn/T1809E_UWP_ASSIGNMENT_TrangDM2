@@ -29,8 +29,8 @@ namespace T1809E_UWP_ASSIGNMENT_TrangDM2.Pages
     public sealed partial class SongListPage : Page
     {
         private Song currentSong;
-        private ISongService _songService = new SongService();
-        private bool _isPlaying = false;
+        private ISongService songService = new SongService();
+        private bool IsPlaying = false;
         private List<Song> songs = new List<Song>();
         private static bool IsLoop = false;
         private static bool IsShuffle = false;
@@ -42,7 +42,7 @@ namespace T1809E_UWP_ASSIGNMENT_TrangDM2.Pages
         private async void LoadSongList(object sender, RoutedEventArgs e)
         {
             StartLoad();
-            var listSong = await _songService.GetMySongs(ApplicationLayout.token);
+            var listSong = await songService.GetMySongs(ApplicationLayout.token);
             songs = JsonConvert.DeserializeObject<List<Song>>(listSong);
             Songs.ItemsSource = songs;
             LoadDone();
@@ -70,19 +70,19 @@ namespace T1809E_UWP_ASSIGNMENT_TrangDM2.Pages
                 
             }
 
-            if (_isPlaying)
+            if (IsPlaying)
             {
                 MyPlayer.MediaPlayer.Pause();
                 PlayButton.Icon = new SymbolIcon(Symbol.Play);
                 StatusText.Text = "Paused";
-                _isPlaying = false;
+                IsPlaying = false;
             }
             else
             {
                 MyPlayer.MediaPlayer.Play();
                 PlayButton.Icon = new SymbolIcon(Symbol.Pause);
                 StatusText.Text = "Now Playing: " + currentSong.name;
-                _isPlaying = true;
+                IsPlaying = true;
             }
         }
         private void NextHandle(object sender, RoutedEventArgs e)
@@ -112,7 +112,7 @@ namespace T1809E_UWP_ASSIGNMENT_TrangDM2.Pages
         private async void NewSongsHandle(object sender, RoutedEventArgs e)
         {
             StartLoad();
-            var listSong = await _songService.GetNewSongs(ApplicationLayout.token);
+            var listSong = await songService.GetNewSongs(ApplicationLayout.token);
             songs = JsonConvert.DeserializeObject<List<Song>>(listSong);
             Songs.ItemsSource = songs;
             LoadDone();
@@ -165,7 +165,7 @@ namespace T1809E_UWP_ASSIGNMENT_TrangDM2.Pages
             MyPlayer.Source = MediaSource.CreateFromUri(new Uri(song.link));
             MyPlayer.MediaPlayer.Play();
             PlayButton.Icon = new SymbolIcon(Symbol.Pause);
-            _isPlaying = true;
+            IsPlaying = true;
             StatusText.Text = "Now Playing: " + currentSong.name;
         }
     }
