@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\TrangDM2\\Documents\\Visual Studio Projects\\T1809E_UWP_ASSIGNMENT_TrangDM2\\T1809E_UWP_ASSIGNMENT_TrangDM2.csproj": {}
+    "C:\\Users\\TrangDM2\\Documents\\Visual Studio Projects\\Assignments\\T1809E_UWP_ASSIGNMENT_TrangDM2\\T1809E_UWP_ASSIGNMENT_TrangDM2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\TrangDM2\\Documents\\Visual Studio Projects\\T1809E_UWP_ASSIGNMENT_TrangDM2\\T1809E_UWP_ASSIGNMENT_TrangDM2.csproj": {
+    "C:\\Users\\TrangDM2\\Documents\\Visual Studio Projects\\Assignments\\T1809E_UWP_ASSIGNMENT_TrangDM2\\T1809E_UWP_ASSIGNMENT_TrangDM2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TrangDM2\\Documents\\Visual Studio Projects\\T1809E_UWP_ASSIGNMENT_TrangDM2\\T1809E_UWP_ASSIGNMENT_TrangDM2.csproj",
+        "projectUniqueName": "C:\\Users\\TrangDM2\\Documents\\Visual Studio Projects\\Assignments\\T1809E_UWP_ASSIGNMENT_TrangDM2\\T1809E_UWP_ASSIGNMENT_TrangDM2.csproj",
         "projectName": "T1809E_UWP_ASSIGNMENT_TrangDM2",
-        "projectPath": "C:\\Users\\TrangDM2\\Documents\\Visual Studio Projects\\T1809E_UWP_ASSIGNMENT_TrangDM2\\T1809E_UWP_ASSIGNMENT_TrangDM2.csproj",
+        "projectPath": "C:\\Users\\TrangDM2\\Documents\\Visual Studio Projects\\Assignments\\T1809E_UWP_ASSIGNMENT_TrangDM2\\T1809E_UWP_ASSIGNMENT_TrangDM2.csproj",
         "packagesPath": "C:\\Users\\TrangDM2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TrangDM2\\Documents\\Visual Studio Projects\\T1809E_UWP_ASSIGNMENT_TrangDM2\\obj\\",
+        "outputPath": "C:\\Users\\TrangDM2\\Documents\\Visual Studio Projects\\Assignments\\T1809E_UWP_ASSIGNMENT_TrangDM2\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -52,6 +52,10 @@
             "SQLitePCL": {
               "target": "Package",
               "version": "[3.8.7.2, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.4.0.991477, )"
             }
           },
           "imports": [

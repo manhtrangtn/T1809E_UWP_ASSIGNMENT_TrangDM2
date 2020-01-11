@@ -10,21 +10,19 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <StackPanel Loaded="LoadSongList">
+        <MediaPlayerElement Name="MyPlayer" AreTransportControlsEnabled="True" />
         <CommandBar>
+            <AppBarToggleButton Click="ShuffleHandle" Icon="Shuffle" Label="Shuffle"/>
+            <AppBarToggleButton Click="RepeatHandle" Icon="RepeatOne" Label="Repeat"/>
             <AppBarSeparator/>
-            <AppBarButton Icon="Back" Label="Previous" Click="Previous"/>
-            <AppBarButton x:Name="PlayButton" Icon="Play" Label="Play" Click="PlayPause"/>
-            <AppBarButton Icon="Forward" Label="Next" Click="Next"/>
+            <AppBarButton Icon="Back" Label="Previous" Click="PreviousHandle"/>
+            <AppBarButton x:Name="PlayButton" Icon="Play" Label="Play" Click="PlayPauseHandle"/>
+            <AppBarButton Icon="Forward" Label="Next" Click="NextHandle"/>
 
             <CommandBar.Content>
                 <TextBlock x:Name="StatusText" Text="Welcome, let's enjoy your day...!" Margin="12,14"/>
             </CommandBar.Content>
         </CommandBar>
-        <StackPanel Orientation="Horizontal">
-            <Button FontFamily="Segoe MDL2 Assets" Content="&#xE767;" />
-            <Slider ValueChanged="volume_ValueChanged" Value="70" x:Name="volume" Width="100"/>
-        </StackPanel>
-        <MediaPlayerElement Name="MyPlayer"/>
         <Grid HorizontalAlignment="Stretch">
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>
@@ -38,7 +36,7 @@
         </Grid>
         <ProgressRing Name="loading" IsActive="False" Grid.Column="6" Grid.Row="2" Height="120" Width="120" />
         <ScrollViewer x:Name="ListSongs">
-                <ListView x:Name="Songs" ItemClick="SongSelected" IsItemClickEnabled="True">
+                <ListView x:Name="Songs" ItemClick="SongSelectedHandle" IsItemClickEnabled="True">
                     <ListView.ItemTemplate>
                         <DataTemplate x:DataType="models:Song">
                             <Grid Margin="0,12,0,12" AutomationProperties.Name="{x:Bind name}">

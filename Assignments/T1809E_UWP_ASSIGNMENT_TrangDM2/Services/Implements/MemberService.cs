@@ -26,7 +26,6 @@ namespace T1809E_UWP_ASSIGNMENT_TrangDM2.Services.Implements
             var resp = await httpClient.PostAsync(Constants.LOGIN_URL, content);
 
             return await resp.Content.ReadAsStringAsync();
-
         }
 
         public async Task<string> Register(Member member)

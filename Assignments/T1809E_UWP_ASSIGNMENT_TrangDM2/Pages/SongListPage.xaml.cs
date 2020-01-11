@@ -10,6 +10,7 @@ using T1809E_UWP_ASSIGNMENT_TrangDM2.Services.Implements;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Media.Core;
+using Windows.Media.Playback;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -31,9 +32,12 @@ namespace T1809E_UWP_ASSIGNMENT_TrangDM2.Pages
         private ISongService _songService = new SongService();
         private bool _isPlaying = false;
         private List<Song> songs = new List<Song>();
+        private static bool IsLoop = false;
+        private static bool IsShuffle = false;
         public SongListPage()
         {
             this.InitializeComponent();
+            //this.MyPlayer.MediaPlayer.MediaEnded += this.PlayerEndedHandle;
         }
         private async void LoadSongList(object sender, RoutedEventArgs e)
         {
@@ -43,24 +47,27 @@ namespace T1809E_UWP_ASSIGNMENT_TrangDM2.Pages
             Songs.ItemsSource = songs;
             LoadDone();
         }
-        private void SongSelected(object sender, ItemClickEventArgs e)
+        private void SongSelectedHandle(object sender, ItemClickEventArgs e)
         {
             currentSong = e.ClickedItem as Song;
-            MyPlayer.Source = MediaSource.CreateFromUri(new Uri(currentSong.link));
-            MyPlayer.MediaPlayer.Play();
-            PlayButton.Icon = new SymbolIcon(Symbol.Pause);
-            _isPlaying = true;
-            StatusText.Text = "Now Playing: " + currentSong.name;
+            PlaySong(currentSong);
         }
         [Obsolete]
-        private void PlayPause(object sender, RoutedEventArgs e)
+        private void PlayPauseHandle(object sender, RoutedEventArgs e)
         {
             if (Songs.ItemsSource == null) return;
             if (currentSong == null)
             {
-                currentSong = songs.FirstOrDefault();
-                MyPlayer.Source = MediaSource.CreateFromUri(new Uri(currentSong.link));
-                Songs.SelectedIndex = 0;
+                try
+                {
+                    currentSong = songs.FirstOrDefault();
+                    MyPlayer.Source = MediaSource.CreateFromUri(new Uri(currentSong.link));
+                    Songs.SelectedIndex = 0;
+                } catch
+                {
+                    return;
+                }
+                
             }
 
             if (_isPlaying)
@@ -78,7 +85,7 @@ namespace T1809E_UWP_ASSIGNMENT_TrangDM2.Pages
                 _isPlaying = true;
             }
         }
-        private void Next(object sender, RoutedEventArgs e)
+        private void NextHandle(object sender, RoutedEventArgs e)
         {
             var currentIndex = Songs.SelectedIndex;
             currentIndex++;
@@ -88,7 +95,7 @@ namespace T1809E_UWP_ASSIGNMENT_TrangDM2.Pages
             }
             PlaySongAtIndex(currentIndex);
         }
-        private void Previous(object sender, RoutedEventArgs e)
+        private void PreviousHandle(object sender, RoutedEventArgs e)
         {
             var currentIndex = Songs.SelectedIndex;
             currentIndex--;
@@ -97,16 +104,6 @@ namespace T1809E_UWP_ASSIGNMENT_TrangDM2.Pages
                 currentIndex = Songs.Items.Count-1;
             }
             PlaySongAtIndex(currentIndex);
-        }
-        private void PlaySongAtIndex(int currentIndex)
-        {
-            currentSong = Songs.Items[currentIndex] as Song;
-            Songs.SelectedIndex = currentIndex;
-            MyPlayer.Source = MediaSource.CreateFromUri(new Uri(currentSong.link));
-            MyPlayer.MediaPlayer.Play();
-            PlayButton.Icon = new SymbolIcon(Symbol.Pause);
-            _isPlaying = true;
-            StatusText.Text = "Now Playing: " + currentSong.name;
         }
         private void MySongsHandle(object sender, RoutedEventArgs e)
         {
@@ -120,6 +117,31 @@ namespace T1809E_UWP_ASSIGNMENT_TrangDM2.Pages
             Songs.ItemsSource = songs;
             LoadDone();
         }
+        private void RepeatHandle(object sender, RoutedEventArgs e)
+        {
+            IsLoop = !IsLoop;
+            MyPlayer.MediaPlayer.IsLoopingEnabled = IsLoop;
+        }
+        private void ShuffleHandle(object sender, RoutedEventArgs e)
+        {
+            IsShuffle = !IsShuffle;
+        }
+        private void PlayerEndedHandle(MediaPlayer sender, object args)
+        {
+            if (IsShuffle)
+            {
+                ShufflePlay();
+            }
+            else
+            {
+                NextHandle(sender, new RoutedEventArgs());
+            }
+        }
+        private void ShufflePlay()
+        {
+            Random r = new Random();
+            PlaySongAtIndex(r.Next(0, songs.Count));
+        }
         private void StartLoad()
         {
             ListSongs.Visibility = Visibility.Collapsed;
@@ -132,11 +154,19 @@ namespace T1809E_UWP_ASSIGNMENT_TrangDM2.Pages
             loading.IsActive = false;
             loading.Visibility = Visibility.Collapsed;
         }
-
-        private void volume_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
+        private void PlaySongAtIndex(int currentIndex)
         {
-            double vol = volume.Value / 100;
-            //MyPlayer.MediaPlayer.Volume = vol;
+            currentSong = Songs.Items[currentIndex] as Song;
+            Songs.SelectedIndex = currentIndex;
+            PlaySong(currentSong);
+        }
+        private void PlaySong(Song song)
+        {
+            MyPlayer.Source = MediaSource.CreateFromUri(new Uri(song.link));
+            MyPlayer.MediaPlayer.Play();
+            PlayButton.Icon = new SymbolIcon(Symbol.Pause);
+            _isPlaying = true;
+            StatusText.Text = "Now Playing: " + currentSong.name;
         }
     }
 }

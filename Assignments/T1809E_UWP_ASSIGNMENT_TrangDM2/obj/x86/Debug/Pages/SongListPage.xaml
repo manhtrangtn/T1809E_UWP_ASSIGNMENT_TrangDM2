@@ -10,21 +10,19 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <StackPanel x:ConnectionId='2'                      >
+        <MediaPlayerElement x:ConnectionId='3' Name="MyPlayer" AreTransportControlsEnabled="True" />
         <CommandBar>
+            <AppBarToggleButton x:ConnectionId='16'                       Icon="Shuffle" Label="Shuffle"/>
+            <AppBarToggleButton x:ConnectionId='17'                      Icon="RepeatOne" Label="Repeat"/>
             <AppBarSeparator/>
-            <AppBarButton x:ConnectionId='17' Icon="Back" Label="Previous"                 />
-            <AppBarButton x:ConnectionId='18' x:Name="PlayButton" Icon="Play" Label="Play"                  />
-            <AppBarButton x:ConnectionId='19' Icon="Forward" Label="Next"             />
+            <AppBarButton x:ConnectionId='18' Icon="Back" Label="Previous"                       />
+            <AppBarButton x:ConnectionId='19' x:Name="PlayButton" Icon="Play" Label="Play"                        />
+            <AppBarButton x:ConnectionId='20' Icon="Forward" Label="Next"                   />
 
             <CommandBar.Content>
-                <TextBlock x:ConnectionId='20' x:Name="StatusText" Text="Wellcome, let's enjoy your day...!" Margin="12,14"/>
+                <TextBlock x:ConnectionId='21' x:Name="StatusText" Text="Welcome, let's enjoy your day...!" Margin="12,14"/>
             </CommandBar.Content>
         </CommandBar>
-        <StackPanel Orientation="Horizontal">
-            <Button FontFamily="Segoe MDL2 Assets" Content="&#xE767;" />
-            <Slider x:ConnectionId='16'                                    Value="70" x:Name="volume" Width="100"/>
-        </StackPanel>
-        <MediaPlayerElement x:ConnectionId='3' Name="MyPlayer"/>
         <Grid HorizontalAlignment="Stretch">
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>
@@ -38,7 +36,7 @@
         </Grid>
         <ProgressRing x:ConnectionId='4' Name="loading" IsActive="False" Grid.Column="6" Grid.Row="2" Height="120" Width="120" />
         <ScrollViewer x:ConnectionId='5' x:Name="ListSongs">
-                <ListView x:ConnectionId='6' x:Name="Songs"                          IsItemClickEnabled="True">
+                <ListView x:ConnectionId='6' x:Name="Songs"                                IsItemClickEnabled="True">
                     <ListView.ItemTemplate>
                         <DataTemplate                         >
                             <Grid x:ConnectionId='8' Margin="0,12,0,12"                                          >
@@ -50,10 +48,10 @@
                                 <StackPanel Margin="12,0,0,0" Grid.Column="1" >
                                     <TextBlock x:ConnectionId='10'                      FontFamily="Segoe UI" FontSize="20" FontWeight="Bold" Style="{ThemeResource BaseTextBlockStyle}" HorizontalAlignment="Left" Margin="0,0,0,6" LineHeight="20"/>
                                     <StackPanel Orientation="Vertical">
-                                        <TextBlock x:ConnectionId='11'                             FontFamily="Segoe UI" FontWeight="Normal" LineHeight="20" Style="{ThemeResource BodyTextBlockStyle}" TextTrimming="CharacterEllipsis" Width="350" MaxLines="1"/>
-                                        <TextBlock x:ConnectionId='12'                        FontFamily="Segoe UI" FontWeight="Normal" LineHeight="20" Style="{ThemeResource BodyTextBlockStyle}" TextTrimming="CharacterEllipsis" Width="350" MaxLines="1" FontStyle="Italic"/>
-                                        <TextBlock x:ConnectionId='13'                        FontFamily="Segoe UI" FontWeight="Bold" LineHeight="20" Style="{ThemeResource BodyTextBlockStyle}" TextTrimming="CharacterEllipsis" Width="350" MaxLines="1" TextDecorations="Underline"/>
-                                </StackPanel>
+                                        <TextBlock x:ConnectionId='11'                        FontFamily="Segoe UI" FontWeight="Normal" LineHeight="20" Style="{ThemeResource BodyTextBlockStyle}" TextTrimming="CharacterEllipsis" Width="350" MaxLines="1" FontStyle="Italic"/>
+                                        <TextBlock x:ConnectionId='12'                        FontFamily="Segoe UI" FontWeight="Bold" LineHeight="20" Style="{ThemeResource BodyTextBlockStyle}" TextTrimming="CharacterEllipsis" Width="350" MaxLines="1" TextDecorations="Underline"/>
+                                        <TextBlock x:ConnectionId='13'                             FontFamily="Segoe UI" FontWeight="Normal" LineHeight="20" Style="{ThemeResource BodyTextBlockStyle}" TextTrimming="CharacterEllipsis" Width="350" MaxLines="1"/>
+                                    </StackPanel>
                                 </StackPanel>
                             </Grid>
                         </DataTemplate>

@@ -10,7 +10,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Grid x:ConnectionId='2'                   >
         <muxc:NavigationView x:ConnectionId='3' x:Name="NavView" 
-                                                          >
+                                                           IsSettingsVisible="False">
             <muxc:NavigationView.MenuItems>
                 <muxc:NavigationViewItem Icon="Audio" Content="Songs" Tag="music" />
                 <muxc:NavigationViewItem Icon="Add" Content="Add new song" Tag="addMusic" />

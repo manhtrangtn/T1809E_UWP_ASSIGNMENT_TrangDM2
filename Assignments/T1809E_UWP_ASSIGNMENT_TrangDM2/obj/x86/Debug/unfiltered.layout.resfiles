@@ -11,6 +11,7 @@ Assets\Wide310x150Logo.scale-200.png
 App.xbf
 ApplicationLayout.xbf
 MainPage.xbf
+Microsoft.UI.Xaml\DensityStyles\Compact.xbf
 Pages\AddSong.xbf
 Pages\Home.xbf
 Pages\LoginPage.xbf

@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>25d5747c-1bc3-4759-ac10-29535bd7fb90</PackageIdentityName>
     <PackageIdentityPublisher>CN=TrangDM2</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\TrangDM2\Documents\Visual Studio Projects\T1809E_UWP_ASSIGNMENT_TrangDM2\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\TrangDM2\Documents\Visual Studio Projects\Assignments\T1809E_UWP_ASSIGNMENT_TrangDM2\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\TrangDM2\Documents\Visual Studio Projects\T1809E_UWP_ASSIGNMENT_TrangDM2\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\TrangDM2\Documents\Visual Studio Projects\Assignments\T1809E_UWP_ASSIGNMENT_TrangDM2\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\T1809E_UWP_ASSIGNMENT_TrangDM2\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\Assignments\T1809E_UWP_ASSIGNMENT_TrangDM2\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\T1809E_UWP_ASSIGNMENT_TrangDM2\bin\x86\Debug\T1809E_UWP_ASSIGNMENT_TrangDM2.exe">
+    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\Assignments\T1809E_UWP_ASSIGNMENT_TrangDM2\bin\x86\Debug\T1809E_UWP_ASSIGNMENT_TrangDM2.exe">
       <PackagePath>entrypoint\T1809E_UWP_ASSIGNMENT_TrangDM2.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TrangDM2\.nuget\packages\documentformat.openxml\2.9.1\lib\netstandard1.3\DocumentFormat.OpenXml.dll">
@@ -43,86 +43,124 @@
     <AppxPackagedFile Include="C:\Users\TrangDM2\.nuget\packages\system.io.packaging\4.5.0\lib\netstandard2.0\System.IO.Packaging.dll">
       <PackagePath>System.IO.Packaging.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TrangDM2\.nuget\packages\win2d.uwp\1.20.0\runtimes\win10-x86\native\Microsoft.Graphics.Canvas.dll">
+      <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TrangDM2\.nuget\packages\xamarin.forms\4.4.0.991477\lib\uap10.0\Xamarin.Forms.Core.dll">
+      <PackagePath>Xamarin.Forms.Core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TrangDM2\.nuget\packages\xamarin.forms\4.4.0.991477\lib\uap10.0\Xamarin.Forms.Platform.UAP.dll">
+      <PackagePath>Xamarin.Forms.Platform.UAP.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TrangDM2\.nuget\packages\xamarin.forms\4.4.0.991477\lib\uap10.0\Xamarin.Forms.Platform.dll">
+      <PackagePath>Xamarin.Forms.Platform.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TrangDM2\.nuget\packages\xamarin.forms\4.4.0.991477\lib\uap10.0\Xamarin.Forms.Xaml.dll">
+      <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TrangDM2\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
+      <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TrangDM2\.nuget\packages\xamarin.forms\4.4.0.991477\lib\uap10.0\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml">
+      <PackagePath>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UAP\v0.8.0.0\ExtensionSDKs\SQLite.UWP.2015\3.30.1\Redist\Debug\x86\sqlite3.dll">
       <PackagePath>sqlite3.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.18362.0\\redist\Debug\x86\ucrtbased.dll">
+      <PackagePath>ucrtbased.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TrangDM2\.nuget\packages\sqlitepcl\3.8.7.2\build\netcore451\SQLitePCL.Ext.dll">
       <PackagePath>SQLitePCL.Ext.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\T1809E_UWP_ASSIGNMENT_TrangDM2\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\Assignments\T1809E_UWP_ASSIGNMENT_TrangDM2\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\T1809E_UWP_ASSIGNMENT_TrangDM2\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\Assignments\T1809E_UWP_ASSIGNMENT_TrangDM2\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\T1809E_UWP_ASSIGNMENT_TrangDM2\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\Assignments\T1809E_UWP_ASSIGNMENT_TrangDM2\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\T1809E_UWP_ASSIGNMENT_TrangDM2\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\Assignments\T1809E_UWP_ASSIGNMENT_TrangDM2\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\T1809E_UWP_ASSIGNMENT_TrangDM2\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\Assignments\T1809E_UWP_ASSIGNMENT_TrangDM2\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\T1809E_UWP_ASSIGNMENT_TrangDM2\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\Assignments\T1809E_UWP_ASSIGNMENT_TrangDM2\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\T1809E_UWP_ASSIGNMENT_TrangDM2\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\Assignments\T1809E_UWP_ASSIGNMENT_TrangDM2\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\T1809E_UWP_ASSIGNMENT_TrangDM2\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\Assignments\T1809E_UWP_ASSIGNMENT_TrangDM2\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\T1809E_UWP_ASSIGNMENT_TrangDM2\bin\x86\Debug\T1809E_UWP_ASSIGNMENT_TrangDM2.xr.xml">
+    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\Assignments\T1809E_UWP_ASSIGNMENT_TrangDM2\bin\x86\Debug\T1809E_UWP_ASSIGNMENT_TrangDM2.xr.xml">
       <PackagePath>T1809E_UWP_ASSIGNMENT_TrangDM2.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\T1809E_UWP_ASSIGNMENT_TrangDM2\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\Assignments\T1809E_UWP_ASSIGNMENT_TrangDM2\bin\x86\Debug\Microsoft.UI.Xaml\DensityStyles\Compact.xbf">
+      <PackagePath>Microsoft.UI.Xaml\DensityStyles\Compact.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\Assignments\T1809E_UWP_ASSIGNMENT_TrangDM2\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\T1809E_UWP_ASSIGNMENT_TrangDM2\bin\x86\Debug\ApplicationLayout.xbf">
+    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\Assignments\T1809E_UWP_ASSIGNMENT_TrangDM2\bin\x86\Debug\ApplicationLayout.xbf">
       <PackagePath>ApplicationLayout.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\T1809E_UWP_ASSIGNMENT_TrangDM2\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\Assignments\T1809E_UWP_ASSIGNMENT_TrangDM2\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\T1809E_UWP_ASSIGNMENT_TrangDM2\bin\x86\Debug\Pages\AddSong.xbf">
+    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\Assignments\T1809E_UWP_ASSIGNMENT_TrangDM2\bin\x86\Debug\Pages\AddSong.xbf">
       <PackagePath>Pages\AddSong.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\T1809E_UWP_ASSIGNMENT_TrangDM2\bin\x86\Debug\Pages\Home.xbf">
+    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\Assignments\T1809E_UWP_ASSIGNMENT_TrangDM2\bin\x86\Debug\Pages\Home.xbf">
       <PackagePath>Pages\Home.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\T1809E_UWP_ASSIGNMENT_TrangDM2\bin\x86\Debug\Pages\LoginPage.xbf">
+    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\Assignments\T1809E_UWP_ASSIGNMENT_TrangDM2\bin\x86\Debug\Pages\LoginPage.xbf">
       <PackagePath>Pages\LoginPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\T1809E_UWP_ASSIGNMENT_TrangDM2\bin\x86\Debug\Pages\RegisterPage.xbf">
+    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\Assignments\T1809E_UWP_ASSIGNMENT_TrangDM2\bin\x86\Debug\Pages\RegisterPage.xbf">
       <PackagePath>Pages\RegisterPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\T1809E_UWP_ASSIGNMENT_TrangDM2\bin\x86\Debug\Pages\SongListPage.xbf">
+    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\Assignments\T1809E_UWP_ASSIGNMENT_TrangDM2\bin\x86\Debug\Pages\SongListPage.xbf">
       <PackagePath>Pages\SongListPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\T1809E_UWP_ASSIGNMENT_TrangDM2\bin\x86\Debug\Pages\UserInformationPage.xbf">
+    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\Assignments\T1809E_UWP_ASSIGNMENT_TrangDM2\bin\x86\Debug\Pages\UserInformationPage.xbf">
       <PackagePath>Pages\UserInformationPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\T1809E_UWP_ASSIGNMENT_TrangDM2\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\TrangDM2\.nuget\packages\microsoft.ui.xaml\2.1.190606001\build\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
+      <PackagePath>WinMetadata\Microsoft.UI.Xaml.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\Assignments\T1809E_UWP_ASSIGNMENT_TrangDM2\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\T1809E_UWP_ASSIGNMENT_TrangDM2\bin\x86\Debug\Core\T1809E_UWP_ASSIGNMENT_TrangDM2.exe">
+    <AppxPackagedFile Include="C:\Users\TrangDM2\Documents\Visual Studio Projects\Assignments\T1809E_UWP_ASSIGNMENT_TrangDM2\bin\x86\Debug\Core\T1809E_UWP_ASSIGNMENT_TrangDM2.exe">
       <PackagePath>T1809E_UWP_ASSIGNMENT_TrangDM2.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
+    <ResolvedSDKReference Include="C:\Users\TrangDM2\.nuget\packages\microsoft.ui.xaml\2.1.190606001\build\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.1.appx">
+      <Name>Microsoft.UI.Xaml.2.1</Name>
+      <Version>2.11906.6001.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.1, MinVersion = 2.11906.6001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\TrangDM2\.nuget\packages\microsoft.ui.xaml\2.1.190606001\build\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.1.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
       <Name>Microsoft.NET.CoreRuntime.2.2</Name>
       <Version>2.2.27902.3</Version>

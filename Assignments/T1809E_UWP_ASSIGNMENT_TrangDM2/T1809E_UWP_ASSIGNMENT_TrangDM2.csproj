@@ -221,6 +221,9 @@
     <PackageReference Include="SQLitePCL">
       <Version>3.8.7.2</Version>
     </PackageReference>
+    <PackageReference Include="Xamarin.Forms">
+      <Version>4.4.0.991477</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <None Include=".editorconfig" />

@@ -10,7 +10,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Grid Loaded="ReadToken">
         <muxc:NavigationView x:Name="NavView" 
-                         ItemInvoked="NavView_ItemInvoked">
+                         ItemInvoked="NavView_ItemInvoked" IsSettingsVisible="False">
             <muxc:NavigationView.MenuItems>
                 <muxc:NavigationViewItem Icon="Audio" Content="Songs" Tag="music" />
                 <muxc:NavigationViewItem Icon="Add" Content="Add new song" Tag="addMusic" />

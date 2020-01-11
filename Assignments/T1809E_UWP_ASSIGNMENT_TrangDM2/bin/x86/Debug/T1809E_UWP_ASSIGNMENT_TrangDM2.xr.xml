@@ -2,6 +2,10 @@
 <Roots >
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application" />
+    <RootType FullName="Windows.UI.Xaml.ResourceDictionary">
+      <RootProperty Name="MergedDictionaries" />
+      <RootProperty Name="Source" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="Background" />
       <RootProperty Name="Content" />
@@ -24,6 +28,7 @@
       <RootMethod Name="SetRowSpan" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.NavigationView">
+      <RootProperty Name="IsSettingsVisible" />
       <RootProperty Name="MenuItems" />
       <RootProperty Name="Content" />
       <RootEvent Name="ItemInvoked" />
@@ -75,6 +80,8 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Tag" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="IsReadOnly" />
+      <RootProperty Name="Name" />
       <RootEvent Name="KeyUp" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
@@ -84,7 +91,8 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
       <RootProperty Name="Background" />
-      <RootProperty Name="FontFamily" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Margin" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="T1809E_UWP_ASSIGNMENT_TrangDM2.Pages.AddSong" />
@@ -131,12 +139,13 @@
       <RootEvent Name="Checked" />
     </RootType>
     <RootType FullName="T1809E_UWP_ASSIGNMENT_TrangDM2.Pages.RegisterPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.MediaPlayerElement">
+      <RootProperty Name="Name" />
+      <RootProperty Name="AreTransportControlsEnabled" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.CommandBar">
       <RootProperty Name="PrimaryCommands" />
       <RootProperty Name="Content" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.MediaPlayerElement">
-      <RootProperty Name="Name" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="IsItemClickEnabled" />
@@ -154,10 +163,10 @@
     <RootType FullName="Windows.UI.Xaml.Controls.PersonPicture">
       <RootProperty Name="ProfilePicture" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Slider">
-      <RootProperty Name="Value" />
-      <RootProperty Name="Width" />
-      <RootEvent Name="ValueChanged" />
+    <RootType FullName="Windows.UI.Xaml.Controls.AppBarToggleButton">
+      <RootProperty Name="Icon" />
+      <RootProperty Name="Label" />
+      <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.AppBarSeparator" />
     <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
